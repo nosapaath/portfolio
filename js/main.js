@@ -1,7 +1,7 @@
 $(function() {
 
   setTimeout(function () {
-    $(".typewriter").html("<h1>I am a Web Developer</h1>")},3500);
+    $(".title-type").html("<h1>I am a Web Developer</h1>")},3500);
 
   $("#btn-down").on("click", function(event) {
     event.preventDefault();

@@ -1,17 +1,18 @@
 .typewriter{
-  
-  h1:first-child {
-    overflow: hidden; 
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: 
-      typing 3.5s steps(40, end),
-			blink-caret .75s step-end infinite;
-		@include screen('medium'){
-			letter-spacing: .15em;
-		}	
-  }
+  @include screen('medium'){
+		h1:first-child {
+			overflow: hidden; 
+			border-right: .15em solid orange;
+			white-space: nowrap;
+			margin: 0 auto;
+			animation: 
+				typing 3.5s steps(40, end),
+				blink-caret .75s step-end infinite;
+			@include screen('medium'){
+				letter-spacing: .15em;
+			}	
+		}
+	}
 }
 /* The typing effect */
 @keyframes typing {

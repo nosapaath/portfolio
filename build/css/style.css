@@ -105,6 +105,9 @@ table {
   @media all and (min-width: 620px) {
     .center-flex h1 {
       font-size: 3rem; } }
+  @media all and (min-width: 1080px) {
+    .center-flex h1 {
+      font-size: 3rem; } }
 
 .column-flex {
   -webkit-box-orient: vertical;
@@ -134,6 +137,10 @@ table {
     position: relative;
     padding: 40px; }
     @media all and (min-width: 620px) {
+      .project-wrapper div {
+        width: 45%;
+        height: 400px; } }
+    @media all and (min-width: 1080px) {
       .project-wrapper div {
         width: 40%;
         height: 400px; } }
@@ -216,8 +223,15 @@ table {
       color: orange; }
 
 .quote-area {
-  max-width: 800px;
-  padding: 20px; }
+  max-width: 80%; }
+  @media all and (min-width: 620px) {
+    .quote-area {
+      max-width: 600px;
+      padding: 20px; } }
+  @media all and (min-width: 1080px) {
+    .quote-area {
+      max-width: 800px;
+      padding: 20px; } }
 
 .black-background {
   background-color: #222; }
@@ -254,14 +268,15 @@ label {
   -webkit-transition-delay: .1s;
           transition-delay: .1s; }
 
-.typewriter h1:first-child {
-  overflow: hidden;
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto;
-  -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-          animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
-  @media all and (min-width: 620px) {
+@media all and (min-width: 620px) {
+  .typewriter h1:first-child {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; } }
+  @media all and (min-width: 620px) and (min-width: 620px) {
     .typewriter h1:first-child {
       letter-spacing: .15em; } }
 
