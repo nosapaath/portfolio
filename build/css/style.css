@@ -1,0 +1,451 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-bold.woff2") format("woff2"), url("../fonts/merriweather-bold.woff") format("woff"), url("../fonts/merriweather-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-bolditalic.woff2") format("woff2"), url("../fonts/merriweather-bolditalic.woff") format("woff"), url("../fonts/merriweather-bolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-light.woff2") format("woff2"), url("../fonts/merriweather-light.woff") format("woff"), url("../fonts/merriweather-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../fonts/novecentosanswide-demibold.woff2") format("woff2"), url("../fonts/novecentosanswide-demibold.woff") format("woff"), url("../fonts/novecentosanswide-demibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../fonts/novecentosanswide-normal.woff2") format("woff2"), url("../fonts/novecentosanswide-normal.woff") format("woff"), url("../fonts/novecentosanswide-normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.hero-section {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px; }
+
+.center-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.column-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column; }
+
+.project-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .project-wrapper div {
+    border-radius: 4px;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
+    width: 40%;
+    height: 400px;
+    margin-bottom: 50px;
+    opacity: 1;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: black;
+    position: relative;
+    padding: 20px; }
+    .project-wrapper div i {
+      margin-left: 5px; }
+    .project-wrapper div p {
+      font-size: 1.2rem;
+      margin-top: 20px; }
+    .project-wrapper div a {
+      color: black;
+      text-decoration: none; }
+    .project-wrapper div .see-more {
+      font-size: 1.2rem;
+      font-weight: bold;
+      position: absolute;
+      bottom: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .project-wrapper div h2 {
+      font-size: 2.5rem;
+      z-index: 100;
+      -webkit-transition: 0.4s;
+      transition: 0.4s; }
+      .project-wrapper div h2:after {
+        content: "";
+        background-color: orange;
+        width: 50px;
+        height: 5px;
+        position: absolute;
+        left: 21px;
+        top: 4.5rem;
+        -webkit-transition: width, 5s;
+        transition: width, 5s;
+        -webkit-transition: background-color, .2s;
+        transition: background-color, .2s; }
+    .project-wrapper div:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+      -webkit-transition: background, .1s;
+      transition: background, .1s;
+      -webkit-transition: .3s, -webkit-box-shadow;
+      transition: .3s, -webkit-box-shadow;
+      transition: box-shadow, .3s;
+      transition: box-shadow, .3s, -webkit-box-shadow;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      cursor: pointer;
+      background: orange;
+      -webkit-box-shadow: rgba(44, 44, 44, 0.5) 0px 5px 7px;
+              box-shadow: rgba(44, 44, 44, 0.5) 0px 5px 7px; }
+      .project-wrapper div:hover .see-more {
+        color: white; }
+      .project-wrapper div:hover h2:after {
+        background-color: white; }
+
+.intro-hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/nosa.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/nosa.jpg") no-repeat center;
+  background-size: cover;
+  background-position: top -20px;
+  background-attachment: fixed;
+  color: white; }
+  .intro-hero i :not(.button) {
+    bottom: 20px; }
+    .intro-hero i :not(.button):hover {
+      color: orange; }
+
+.quote-area {
+  max-width: 800px;
+  padding: 20px; }
+
+.black-background {
+  background-color: #222; }
+
+.left-box {
+  height: 500px; }
+
+.contact-wrapper {
+  background-color: #222;
+  position: relative;
+  height: 100vh;
+  padding: 5% 10%; }
+
+.contact-me {
+  color: white; }
+
+html {
+  font-size: 16px;
+  font-family: "Novecento", serif; }
+
+h1 {
+  font-size: 3rem; }
+
+label {
+  color: white; }
+
+.quote-hero:hover .em-word {
+  background-color: orange;
+  color: white; }
+
+.em-word {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s; }
+
+.typewriter h1:first-child {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  0% {
+    width: 0%; }
+  40% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+@keyframes typing {
+  0% {
+    width: 0%; }
+  40% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+
+.form-style-8 {
+  font-family: 'Open Sans Condensed', arial, sans;
+  width: 500px;
+  padding: 30px;
+  background: #FFFFFF;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22); }
+
+.form-style-8 h2 {
+  background: #4D4D4D;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #797979;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin: -30px -30px 30px -30px; }
+
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px; }
+
+.form-style-8 textarea {
+  resize: none;
+  overflow: hidden; }
+
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"] {
+  -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  background-color: #2CBBBB;
+  border: 1px solid #27A0A0;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.form-style-8 input[type="button"]:hover,
+.form-style-8 input[type="submit"]:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #34CACA), to(#30C9C9));
+  background: linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+  background-color: #34CACA; }
+
+.more_about {
+  background: orange;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  margin: 0;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+          animation: 1s ease-out 0s 1 slideInFromLeft; }
+
+.cool-insert-from-left {
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+          animation: 1s ease-out 0s 1 slideInFromLeft; }
+
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+.button {
+  position: absolute;
+  opacity: 1;
+  bottom: 10px;
+  -webkit-animation-name: jumpUp, opacityShow;
+          animation-name: jumpUp, opacityShow;
+  -webkit-animation-duration: 1.5s, 6s;
+          animation-duration: 1.5s, 6s;
+  -webkit-animation-iteration-count: 3, 1;
+          animation-iteration-count: 3, 1;
+  -webkit-animation-delay: 3.5s, 0s;
+          animation-delay: 3.5s, 0s; }
+  .button:hover {
+    cursor: pointer;
+    color: orange; }
+
+@-webkit-keyframes jumpUp {
+  0% {
+    bottom: 10px; }
+  40% {
+    bottom: 10px; }
+  50% {
+    bottom: 30px; }
+  60% {
+    bottom: 10px; }
+  80% {
+    bottom: 30px; }
+  90% {
+    bottom: 10px; }
+  100% {
+    bottom: 10px; } }
+
+@keyframes jumpUp {
+  0% {
+    bottom: 10px; }
+  40% {
+    bottom: 10px; }
+  50% {
+    bottom: 30px; }
+  60% {
+    bottom: 10px; }
+  80% {
+    bottom: 30px; }
+  90% {
+    bottom: 10px; }
+  100% {
+    bottom: 10px; } }
+
+@-webkit-keyframes opacityShow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes opacityShow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

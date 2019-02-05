@@ -1,0 +1,135 @@
+.hero-section{
+  height: 100vh; 
+  width: 100vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.center-flex{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.column-flex{
+  flex-flow: column;
+}
+
+.project-wrapper{
+  margin-top: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  div{
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.12);
+    width: 40%;
+    height: 400px;
+    margin-bottom: 50px;
+    opacity:1;
+    transition: 0.4s;
+    color: black;
+    position: relative;
+    padding: 20px;
+    i{
+      margin-left: 5px;
+    }
+    p{
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    .see-more{
+      font-size: 1.2rem;
+      font-weight: bold;
+      position: absolute; 
+      bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    h2{
+      font-size: 2.5rem;
+      z-index: 100;
+      transition: 0.4s;
+      &:after{
+        content: "";
+        background-color: orange;
+        width: 50px;
+        height: 5px;
+        position: absolute;
+        left: 21px;
+        top: 4.5rem;
+        transition: width, 5s;
+        transition: background-color, .2s;
+      }
+    }
+    &:hover{
+      transform: scale(1.05);
+      .see-more{
+        color: white;
+      }
+      h2{
+        &:after{
+          background-color: white;
+        }
+      }
+      transition: background, .1s;
+	    transition: box-shadow, .3s;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      cursor: pointer;
+      background: orange;
+      box-shadow: rgba(44, 44, 44, .5) 0px 5px 7px
+    }
+  }
+}
+
+// background on hero section
+
+.intro-hero{
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/nosa.jpg") no-repeat center;
+  background-size: cover;
+  background-position: top -20px;
+  background-attachment: fixed;
+  color: white;
+  i :not(.button){
+    bottom: 20px;
+    &:hover{
+      color:orange;
+    }
+  }
+}
+
+.quote-area{
+  max-width: 800px;
+  padding: 20px;
+}
+
+.black-background{
+  background-color: #222;
+}
+
+.left-box{
+  height: 500px;
+}
+
+//contact form
+
+.contact-wrapper{
+  background-color: #222;
+  position: relative;
+  height: 100vh;
+  padding: 5% 10%;
+}
+
+.contact-me{
+  color: white;
+}
