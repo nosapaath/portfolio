@@ -102,6 +102,9 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 620px) {
+    .center-flex h1 {
+      font-size: 3rem; } }
 
 .column-flex {
   -webkit-box-orient: vertical;
@@ -121,7 +124,7 @@ table {
     border-radius: 4px;
     -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
-    width: 40%;
+    width: 100%;
     height: 400px;
     margin-bottom: 50px;
     opacity: 1;
@@ -129,7 +132,11 @@ table {
     transition: 0.4s;
     color: black;
     position: relative;
-    padding: 20px; }
+    padding: 40px; }
+    @media all and (min-width: 620px) {
+      .project-wrapper div {
+        width: 40%;
+        height: 400px; } }
     .project-wrapper div i {
       margin-left: 5px; }
     .project-wrapper div p {
@@ -142,7 +149,7 @@ table {
       font-size: 1.2rem;
       font-weight: bold;
       position: absolute;
-      bottom: 10px;
+      bottom: 40px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -160,8 +167,8 @@ table {
         width: 50px;
         height: 5px;
         position: absolute;
-        left: 21px;
-        top: 4.5rem;
+        left: 41px;
+        top: 5.8rem;
         -webkit-transition: width, 5s;
         transition: width, 5s;
         -webkit-transition: background-color, .2s;
@@ -190,12 +197,19 @@ table {
         background-color: white; }
 
 .intro-hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/nosa.jpg") no-repeat center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/nosa.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/nosa-phone.png") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/nosa-phone.png") no-repeat center;
   background-size: cover;
   background-position: top -20px;
   background-attachment: fixed;
   color: white; }
+  @media all and (min-width: 620px) {
+    .intro-hero {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/nosa.jpg") no-repeat center;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/nosa.jpg") no-repeat center;
+      background-size: cover;
+      background-position: top -20px;
+      background-attachment: fixed; } }
   .intro-hero i :not(.button) {
     bottom: 20px; }
     .intro-hero i :not(.button):hover {
@@ -242,31 +256,28 @@ label {
 
 .typewriter h1:first-child {
   overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange;
-  /* The typwriter cursor */
   white-space: nowrap;
-  /* Keeps the content on a single line */
   margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  /* Adjust as needed */
   -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
           animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+  @media all and (min-width: 620px) {
+    .typewriter h1:first-child {
+      letter-spacing: .15em; } }
 
 /* The typing effect */
 @-webkit-keyframes typing {
   0% {
     width: 0%; }
-  40% {
-    width: 0%; }
+  50% {
+    width: 100%; }
   100% {
     width: 100%; } }
 @keyframes typing {
   0% {
     width: 0%; }
-  40% {
-    width: 0%; }
+  50% {
+    width: 100%; }
   100% {
     width: 100%; } }
 
@@ -387,6 +398,7 @@ label {
             transform: translateX(0); } }
 
 .button {
+  color: white;
   position: absolute;
   opacity: 1;
   bottom: 10px;
@@ -406,11 +418,14 @@ label {
   0% {
     bottom: 10px; }
   40% {
-    bottom: 10px; }
+    bottom: 10px;
+    color: orange; }
   50% {
-    bottom: 30px; }
+    bottom: 30px;
+    color: orange; }
   60% {
-    bottom: 10px; }
+    bottom: 10px;
+    color: orange; }
   80% {
     bottom: 30px; }
   90% {
@@ -422,11 +437,14 @@ label {
   0% {
     bottom: 10px; }
   40% {
-    bottom: 10px; }
+    bottom: 10px;
+    color: orange; }
   50% {
-    bottom: 30px; }
+    bottom: 30px;
+    color: orange; }
   60% {
-    bottom: 10px; }
+    bottom: 10px;
+    color: orange; }
   80% {
     bottom: 30px; }
   90% {
