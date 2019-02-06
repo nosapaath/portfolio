@@ -223,7 +223,9 @@ table {
       color: orange; }
 
 .quote-area {
-  max-width: 80%; }
+  padding: 20px; }
+  .quote-area h1 {
+    margin-left: 5px; }
   @media all and (min-width: 620px) {
     .quote-area {
       max-width: 600px;
@@ -247,6 +249,11 @@ table {
 
 .contact-me {
   color: white; }
+
+.instanews img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
 
 html {
   font-size: 16px;
@@ -482,3 +489,7 @@ label {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.hlighter span {
+  background: orange;
+  color: white; }

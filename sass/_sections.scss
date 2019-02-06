@@ -131,7 +131,10 @@
 }
 
 .quote-area{
-    max-width: 80%;
+    padding: 20px;
+    h1{
+      margin-left: 5px;
+    }
   @include screen('medium'){
     max-width: 600px;
     padding: 20px;
@@ -161,4 +164,12 @@
 
 .contact-me{
   color: white;
+}
+
+.instanews{
+  img{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
 }

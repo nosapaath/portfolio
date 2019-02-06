@@ -55,3 +55,12 @@
   40%{opacity: 0;}
   100%{opacity: 1;}
 }
+
+//js add hightlighter
+
+.hlighter{
+  span{
+    background:orange;
+    color: white;
+  }
+}
