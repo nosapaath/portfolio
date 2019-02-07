@@ -384,6 +384,8 @@ html {
   font-size: 16px;
   font-family: "Novecento", serif;
   background-color: #cccccc; }
+  html button {
+    cursor: pointer; }
 
 h1 {
   font-size: 2rem; }
