@@ -1,8 +1,10 @@
 .typewriter{
+	display: inline-block;
+	padding-top: 35vh;
   @include screen('medium'){
 		h1:first-child {
 			overflow: hidden; 
-			border-right: .15em solid orange;
+			border-right: 1rem solid orange;
 			white-space: nowrap;
 			margin: 0 auto;
 			animation: 

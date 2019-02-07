@@ -13,3 +13,7 @@
     @content;
   }
 }
+
+@mixin easeOut{
+  transition: all .5s ease-out;
+}

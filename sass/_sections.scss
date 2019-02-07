@@ -1,24 +1,8 @@
 .hero-section{
   height: 100vh; 
   width: 100vw; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-bottom: 50px;
-}
-
-.center-flex{
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  h1{
-    @include screen('medium'){
-      font-size: 3rem;
-    }
-    @include screen('large'){
-      font-size: 3rem;
-    }
-  }
 }
 
 .column-flex{
@@ -26,22 +10,27 @@
 }
 
 .project-wrapper{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   margin-top: 50px;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  padding: 20px;
   div{
     border-radius: 4px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,.12);
     width: 100%;
     height: 400px;
+    background: white;
     @include screen('medium'){
       width: 45%;
       height: 400px;
+      background: white;
     }
     @include screen('large'){
       width: 40%;
       height: 400px;
+      background: white;
     }
     margin-bottom: 50px;
     opacity:1;
@@ -133,7 +122,7 @@
 .quote-area{
     padding: 20px;
     h1{
-      margin-left: 5px;
+      margin: 0 auto;
     }
   @include screen('medium'){
     max-width: 600px;
@@ -151,6 +140,16 @@
 
 .left-box{
   height: 500px;
+}
+
+.hideSmall{
+  display: none !important;
+  @include screen('medium'){
+    display: inline;
+  }
+  @include screen('large'){
+    display: inline;
+  }
 }
 
 //contact form
@@ -171,5 +170,14 @@
     position: absolute;
     right: 20px;
     bottom: 20px;
+  }
+}
+
+.titleSmall{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  @include screen('medium'){
+    display: none;
   }
 }

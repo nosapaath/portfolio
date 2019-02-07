@@ -3,7 +3,7 @@
 
 <link rel="stylesheet" href="./build/css/style.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,81 +12,83 @@
 </head>
 
 <body>
-  <section class="hero-section intro-hero container-fluid">
-    <div class="center-flex column-flex">
-      <div class="typewriter title-type">
-          <h1>Hi, I'm Ade Aprianosa Paath </h1> 
-      </div>
-      <i id="btn-down" class="fas fa-arrow-down fa-2x button" ></i>
-    </div>
-  </section>
+  <main id="home">
+    <section class="hero-section intro-hero">
+        <div>
+          <div class="typewriter title-type">
+              <h1>Ade Aprianosa Paath</h1> 
+              <h2 class="titleSmall">Web Developer</h2>
+          </div>
+    
+          <header>
+            <div id="menu-btn" class="menu-btn">
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+            </div>
+    
+            <nav class="menu">
+              <div class="menu-branding">
+                <div class="portrait"></div>
+              </div>
+              <ul class="menu-nav">
+                <li class="nav-item current">
+                  <a href="./index.html" class="nav-link">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./about.html" class="nav-link">
+                    About Me
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./work.html" class="nav-link">
+                    My Work
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact.html" class="nav-link">
+                    Get in touch!
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+    
+          <!-- social media links -->
+          <div class="icons">
+              <a href="https://github.com/nosapaath">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+              <a href="https://www.instagram.com/nosanosir/">
+                  <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/nosapaath/">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="https://twitter.com/nosanosir">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </div>
+    
+          <i id="btn-down" class="fas fa-arrow-down fa-2x button" ></i>
+        </div>
+      </section>
+  </main>
+  
   <section id="scroll-to"class="hero-section quote-hero">
-    <i class="fas fa-quote-left fa-2x"></i>
+    <i class="fas fa-quote-left fa-2x hideSmall"></i>
     <div id="hlight" class="quote-area">
       <h1> I want to <span class="em-word">collaborate</span> with other creatives to <span class="em-word">build</span> experiences that <span class="em-word">make a difference</span>.</h1>
     </div>
-    <i class="fas fa-quote-right fa-2x"></i>
+    <i class="fas fa-quote-right fa-2x hideSmall"></i>
   </section>
-  <section class="container-fluid">
-    <div class="center-flex project-wrapper">
-        <div class="quotes-devs">
-          <a href="https://github.com/nosapaath/quotesForDevs">
-            <h2>Quotes On Devs</h2>
-            <p>A Wordpress based website built using Rest API, Jquery, and PHP.</p>
-            <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
-          </a>
-        </div>
-        <div class="instanews">
-          <a href="https://nosapaath.github.io/InstanewsApp/">
-            <h2>Instanews</h2>
-            <p>An app that uses JavaScript and the New York Times API to populate news stories.</p>
-            <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
-            <img src="./build/images/nyt-logo.svg" alt="new york times app logo" height="87px" width="100px" />
-          </a>
-        </div>
-        <div class="aloha">
-          <a href="https://github.com/nosapaath/AlohaProject"> 
-            <h2>Aloha Website</h2>
-            <p>An ecommerce store website built using jQuery and flex boxes. </p>
-            <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
-          </a>
-        </div>
-        <div class="inhabitent">
-          <a href="https://github.com/nosapaath/inhabitentCo">
-            <h2>Inhabitent Co.</h2>
-            <p>A Wordpress based website built using PHP.</p>
-            <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
-          </a>
-        </div>
-    </div>
-  </section>
-  <section class="hero-section container-fluid">
-    <h2 class="more_about">
-      Learn More About me
-    </h2>
-  </section>
-  <section class="hero-section container-fluid">
-      <div class="center-flex column-flex typewriter">
-        <h1>Let's Collaborate</h1> 
-        <div>
-          <form action="mailto:adepaath@gmail.com" autocomplete="off">
-            <br>
-            <input placeholder="Name" type="text" ><br>
-            <br>
-            <input placeholder="E-mail" type="text" ><br>
-            <br>
-            <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
-            <br>
-            <input type="button" value="Send"></button>
-            <br>
-            </form>
-        </div>
-      </div>
-    </section>
+
+
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="./build/js/main.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </html>

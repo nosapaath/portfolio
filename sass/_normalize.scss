@@ -1,9 +1,20 @@
+*{
+  box-sizing: border-box;
+}
 html{
   font-size: 16px;
   font-family: $font_main;
+  background-color: lighten(black, 80%);
 }
+
 h1{
-  font-size: 3rem;
+  font-size: 2rem;
+    @include screen('medium'){
+      font-size: 3rem;
+    }
+    @include screen('large'){
+      font-size: 3rem;
+    }
 }
 
 label{
@@ -20,4 +31,9 @@ label{
 .em-word{
   transition: 0.5s;
   transition-delay: .1s;
+}
+
+a{
+  color: white;
+  text-decoration: none;
 }
