@@ -14,25 +14,24 @@
 
 <body>
   <main id="home">
-    <section class="intro-hero">
-          <div class="title-type">
-              <h1>Front-end Developer</h1>
-              <p class="sub-title">I like to code from scratch and learn a thing or two in the process.</p>
-              <div class="branding">
-                <img src="./build/images/nosa.jpg" alt="portrait of me smiling">
-              </div>
+    <section class="outer-container">
+          <div class="inner-container greeting">
+              <h1>Hello, my name is Nosa. I am a Front-end developer and photographer, living in Vancouver, BC.</h1>
               <a href="#" class="btn">
                 <p>Let's Chat</p>
+              </a>
+              <a href="#" class="logo">
+                <p>NP</p>
               </a>
           </div>
       </section>
   </main>
 
-  <div class="introMe">
-    <h3>Hi, I'm Nosa. Nice to meet you</h3>
+  <div class="outer-container">
+    <img class="branding-picture inner-container" src="./build/images/nosa.jpg" alt="picture of Nosa Paath" >
   </div>
-
-  <div class="round-box">
+  
+  <div class="round-box outer-container">
     <i class="fas fa-laptop-code fa-4x"></i>
     <h3>Languages I Speak</h3>
     <p>HTML, CSS, JavaScript, Sass,PHP</p>
@@ -46,14 +45,17 @@
     </ul>
   </div>
 
-  <section>
+  <section class="outer-container">
+      <div class="title">
+        <h1>My Recent Work</h1>
+      </div>
       <div class="project-wrapper">
-          
           <div class="quotes-devs">
             <a href="https://github.com/nosapaath/quotesForDevs">
               <h2>Quotes On Devs</h2>
               <p>A Wordpress based website built using Rest API, Jquery, and PHP.</p>
               <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+              <img src="./build/images/quoteslogo.svg" alt="new york times app logo" height="87px" width="100px" />
             </a>
           </div>
           <div class="instanews">
@@ -69,6 +71,7 @@
               <h2>Aloha Website</h2>
               <p>An ecommerce store website built using jQuery and flex boxes. </p>
               <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+              <img src="./build/images/aloha-logo.svg" alt="new york times app logo" height="87px" width="100px" />
             </a>
           </div>
           <div class="inhabitent">
@@ -76,12 +79,13 @@
               <h2>Inhabitent Co.</h2>
               <p>A Wordpress based website built using PHP.</p>
               <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+              <img src="./build/images/inhabitent-logo.svg" alt="new york times app logo" height="87px" width="100px" />
             </a>
           </div>
       </div>
     </section>
 
-    <footer class="introMe">
+    <footer>
       <div class="icons">
           <a href="https://github.com/nosapaath">
             <i class="fab fa-github fa-2x"></i>
@@ -103,3 +107,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
 </html>
+
+              <!-- <div class="branding">
+                <img src="./build/images/nosa.jpg" alt="portrait of me smiling">
+              </div> -->
