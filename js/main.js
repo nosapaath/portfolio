@@ -22,12 +22,12 @@ $(function() {
   const $menu = $('.menu');
   const $menuNav = $('.menu-nav');
   const $menuBranding = $('.menu-branding');
-  const $navItems = $('.nav-item');
+  // const $navItems = $('.nav-item');
 
   //initial state of menu
   let $showMenu = false;
 
-  $menuBtn.click(function(){
+  $('#menu-btn').click(function(){
     console.log('work');
     toggleMenu();
   });
@@ -43,12 +43,12 @@ $(function() {
       // Set Menu State
       $showMenu = true;
     } else {
+      $('.menu-nav a:has(.nav-item)').removeClass('show');
       $menuBtn.removeClass('close');
       $menu.removeClass('show');
       $menuNav.removeClass('show');
       $menuBranding.removeClass('show');
-      $('.menu-nav a:has(.nav-item)').removeClass('show');
-  
+
       // Set Menu State
       $showMenu = false;
     }
