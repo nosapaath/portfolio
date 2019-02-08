@@ -47,7 +47,7 @@ table {
 
 .menu-btn {
   position: fixed;
-  z-index: 3;
+  z-index: 100;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -73,6 +73,7 @@ table {
               transform: rotate(-45deg) translate(7px, -6px); }
 
 .menu {
+  z-index: 2;
   position: fixed;
   top: 0;
   width: 100%;
@@ -128,7 +129,12 @@ table {
       height: 250px;
       background: url("../images/nosa.jpg");
       border-radius: 50%;
-      border: solid 3px orange; }
+      border: solid 3px orange;
+      overflow: hidden; }
+      .menu-branding .portrait img {
+        width: 100%;
+        height: auto;
+        margin-top: -25px; }
   .menu .nav-item {
     -webkit-transform: translate3d(600px, 0, 0);
             transform: translate3d(600px, 0, 0);
@@ -202,6 +208,48 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+.title-type {
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .title-type h1 {
+    margin-top: 30vh;
+    margin-bottom: 2rem;
+    font-weight: bold; }
+  .title-type .sub-title {
+    width: 60%; }
+  .title-type .btn {
+    border: 1px orange solid;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+    .title-type .btn:hover {
+      cursor: pointer; }
+    .title-type .btn p {
+      color: orange; }
+  .title-type .branding {
+    border: 2px orange solid;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    bottom: 20px; }
+    .title-type .branding img {
+      width: auto;
+      margin-left: -66px;
+      height: 100%; }
+
 .hero-section {
   height: 100vh;
   width: 100vw;
@@ -225,7 +273,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  margin-top: 80px;
   width: 100%;
   padding: 20px; }
   .project-wrapper div {
@@ -233,7 +281,7 @@ table {
     -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
     width: 100%;
-    height: 400px;
+    height: 300px;
     background: white;
     margin-bottom: 50px;
     opacity: 1;
@@ -289,8 +337,7 @@ table {
         -webkit-transition: background-color, .2s;
         transition: background-color, .2s; }
     .project-wrapper div:hover {
-      -webkit-transform: scale(1.05);
-              transform: scale(1.05);
+      top: 10px;
       -webkit-transition: background, .1s;
       transition: background, .1s;
       -webkit-transition: .3s, -webkit-box-shadow;
@@ -312,12 +359,12 @@ table {
         background-color: white; }
 
 .intro-hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/nosa.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/nosa.jpg");
+  text-align: center;
+  background-color: white;
   background-size: cover;
-  background-position-x: -300px;
+  background-position: 25% 50%;
   background-attachment: fixed;
-  color: white; }
+  color: black; }
   @media all and (min-width: 620px) {
     .intro-hero {
       background-size: cover;
@@ -329,18 +376,18 @@ table {
       color: orange; }
 
 .quote-area {
-  -ms-touch-action: pan-right pinch-zoom;
-      touch-action: pan-right pinch-zoom;
+  width: 80%;
   padding: 20px; }
   .quote-area h1 {
     font-size: 5rem; }
   @media all and (min-width: 620px) {
     .quote-area {
-      max-width: 600px;
+      margin: 0 auto;
+      width: 80%;
       padding: 20px; } }
   @media all and (min-width: 1080px) {
     .quote-area {
-      max-width: 800px;
+      width: 80%;
       padding: 20px; } }
 
 .black-background {
@@ -372,13 +419,55 @@ table {
   right: 20px;
   bottom: 20px; }
 
-.titleSmall {
+.introMe {
+  background-color: orange;
+  height: 300px;
+  padding-top: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center; }
+  .introMe h3 {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .introMe p {
+    size: .8rem;
+    margin-top: 10px;
+    padding: 0 30px; }
+
+.round-box {
+  margin: 0 5px;
+  border: 0.5px orange solid;
+  border-top: none;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
   text-align: center;
-  text-transform: uppercase;
-  font-weight: lighter; }
-  @media all and (min-width: 620px) {
-    .titleSmall {
-      display: none; } }
+  border-radius: 0px 0px 10px 10px; }
+  .round-box h3, .round-box i {
+    color: orange; }
+  .round-box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -386,10 +475,11 @@ table {
 
 html {
   font-size: 16px;
-  font-family: "Novecento", serif;
-  background-color: #cccccc; }
+  font-family: Rubik; }
   html button {
     cursor: pointer; }
+  html p {
+    font-family: Karla; }
 
 h1 {
   font-size: 2rem; }

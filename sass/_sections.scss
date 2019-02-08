@@ -13,14 +13,14 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 80px;
   width: 100%;
   padding: 20px;
   div{
     border-radius: 4px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,.12);
     width: 100%;
-    height: 400px;
+    height: 300px;
     background: white;
     @include screen('medium'){
       width: 45%;
@@ -74,7 +74,7 @@
       }
     }
     &:hover{
-      transform: scale(1.05);
+      top: 10px;
       .see-more{
         color: white;
       }
@@ -100,17 +100,18 @@
 // background on hero section
 
 .intro-hero{
+  text-align: center;
   @include screen('medium'){
     // background: black;
     background-size: cover;
     background-position: top -20px;
     background-attachment: fixed;
   }
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/nosa.jpg');
+  background-color: white;
   background-size: cover;
-  background-position-x: -300px;
+  background-position: 25% 50%;
   background-attachment: fixed;
-  color: white;
+  color: black;
   i :not(.button){
     bottom: 20px;
     &:hover{
@@ -120,18 +121,19 @@
 }
 
 .quote-area{
-    touch-action: pan-right pinch-zoom;
+    width: 80%;
     padding: 20px;
     h1{
       font-size: 5rem;
       
     }
   @include screen('medium'){
-    max-width: 600px;
+    margin: 0 auto;
+    width: 80%;
     padding: 20px;
   }
   @include screen('large'){
-    max-width: 800px;
+    width: 80%;
     padding: 20px;
   }
 }
@@ -175,11 +177,42 @@
   }
 }
 
-.titleSmall{
+.introMe{
+  background-color: $secondary-color;
+  height: 300px;
+  padding-top: 100px;
+  padding-right: 10px;
+  padding-left:10px;
   text-align: center;
-  text-transform: uppercase;
-  font-weight: lighter;
-  @include screen('medium'){
-    display: none;
+  h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  p{
+    size: .8rem;
+    margin-top: 10px;
+    padding: 0 30px;
+  }
+}
+
+.round-box{
+  margin: 0 5px;
+  border: .5px $secondary-color solid;
+  border-top: none;
+  height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  h3,i{
+    color: $secondary-color;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

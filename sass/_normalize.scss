@@ -4,11 +4,14 @@
 html{
   font-size: 16px;
   font-family: $font_main;
-  background-color: lighten(black, 80%);
   button{
     cursor: pointer;
   }
+  p{
+    font-family: $font_sub;
+  }
 }
+
 
 h1{
   font-size: 2rem;

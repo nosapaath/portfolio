@@ -3,7 +3,8 @@
 
 <link rel="stylesheet" href="./build/css/style.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,79 +14,89 @@
 
 <body>
   <main id="home">
-    <section class="hero-section intro-hero">
-        <div>
-          <div class="typewriter title-type">
-              <h1>Ade Aprianosa Paath</h1> 
-              <h2 class="titleSmall">Web Developer</h2>
-          </div>
-    
-          <header>
-            <div onclick='' id="menu-btn" class="menu-btn">
-              <div class="btn-line"></div>
-              <div class="btn-line"></div>
-              <div class="btn-line"></div>
-            </div>
-    
-            <nav class="menu">
-              <div class="menu-branding">
-                <div class="portrait"></div>
+    <section class="intro-hero">
+          <div class="title-type">
+              <h1>Front-end Developer</h1>
+              <p class="sub-title">I like to code from scratch and learn a thing or two in the process.</p>
+              <div class="branding">
+                <img src="./build/images/nosa.jpg" alt="portrait of me smiling">
               </div>
-              <ul class="menu-nav">
-                <li class="nav-item current">
-                  <a href="./index.html" class="nav-link">
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./about.html" class="nav-link">
-                    About Me
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./work.html" class="nav-link">
-                    My Work
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./contact.html" class="nav-link">
-                    Get in touch!
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </header>
-    
-          <!-- social media links -->
-          <div class="icons">
-              <a href="https://github.com/nosapaath">
-                <i class="fab fa-github fa-2x"></i>
+              <a href="#" class="btn">
+                <p>Let's Chat</p>
               </a>
-              <a href="https://www.instagram.com/nosanosir/">
-                  <i class="fab fa-instagram fa-2x"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/nosapaath/">
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-              <a href="https://twitter.com/nosanosir">
-                <i class="fab fa-twitter fa-2x"></i>
-              </a>
-            </div>
-    
-          <i onclick='' id="btn-down" class="fas fa-arrow-down fa-2x button" ></i>
-        </div>
+          </div>
       </section>
   </main>
-  
-  <section id="scroll-to"class="hero-section quote-hero">
-    <i class="fas fa-quote-left fa-2x hideSmall"></i>
-    <div id="hlight" class="quote-area">
-      <h1> I want to <span class="em-word">collaborate</span> with other creatives to <span class="em-word">build</span> experiences that <span class="em-word">make a difference</span>.</h1>
-    </div>
-    <i class="fas fa-quote-right fa-2x hideSmall"></i>
-  </section>
 
+  <div class="introMe">
+    <h3>Hi, I'm Nosa. Nice to meet you</h3>
+  </div>
 
+  <div class="round-box">
+    <i class="fas fa-laptop-code fa-4x"></i>
+    <h3>Languages I Speak</h3>
+    <p>HTML, CSS, JavaScript, Sass,PHP</p>
+    <h3>Tech</h3>
+    <ul>
+      <li>VS Code</li>
+      <li>iTerm</li>
+      <li>Chrome Dev Tool</li>
+      <li>Github</li>
+      <li>WordPress</li>
+    </ul>
+  </div>
+
+  <section>
+      <div class="project-wrapper">
+          
+          <div class="quotes-devs">
+            <a href="https://github.com/nosapaath/quotesForDevs">
+              <h2>Quotes On Devs</h2>
+              <p>A Wordpress based website built using Rest API, Jquery, and PHP.</p>
+              <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+            </a>
+          </div>
+          <div class="instanews">
+            <a href="https://nosapaath.github.io/InstanewsApp/">
+              <h2>Instanews</h2>
+              <p>An app that uses JavaScript and the New York Times API to populate news stories.</p>
+              <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+              <img src="./build/images/nyt-logo.svg" alt="new york times app logo" height="87px" width="100px" />
+            </a>
+          </div>
+          <div class="aloha">
+            <a href="https://github.com/nosapaath/AlohaProject"> 
+              <h2>Aloha Website</h2>
+              <p>An ecommerce store website built using jQuery and flex boxes. </p>
+              <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+            </a>
+          </div>
+          <div class="inhabitent">
+            <a href="https://github.com/nosapaath/inhabitentCo">
+              <h2>Inhabitent Co.</h2>
+              <p>A Wordpress based website built using PHP.</p>
+              <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+            </a>
+          </div>
+      </div>
+    </section>
+
+    <footer class="introMe">
+      <div class="icons">
+          <a href="https://github.com/nosapaath">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/nosanosir/">
+              <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nosapaath/">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://twitter.com/nosanosir">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+    </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="./build/js/main.min.js"></script>
