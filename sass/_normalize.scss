@@ -15,6 +15,9 @@ html{
   }
   main{
     padding-top: 20vh;
+    @include screen('medium'){
+      padding-top: 50vh;
+    }
   }
   li{
     font-size: 1rem;

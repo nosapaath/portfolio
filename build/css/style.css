@@ -496,6 +496,9 @@ html {
     color: orange; }
   html main {
     padding-top: 20vh; }
+    @media all and (min-width: 620px) {
+      html main {
+        padding-top: 50vh; } }
   html li {
     font-size: 1rem;
     font-weight: normal; }
