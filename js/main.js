@@ -53,5 +53,37 @@ $(function() {
       $showMenu = false;
     }
   }
-});
+
+  //form
+  $('#submit').click(function(event){
+    console.log('click')
+
+    let $email = $('.email').val()
+    let $name = $('.name').val()
+    let $message = $('.message').val()
+    let $statusElm = $('.status')
+    $statusElm.empty()
+
+    if($email.length > 5 && $email.includes('@') && $email.includes('.')){
+      $statusElm.append('<div>email is valid</div>');
+    }else{
+      event.preventDefault()
+      $statusElm.append('<div>email is invalid</div>');
+    }
+
+    if($name.length > 2){
+      $statusElm.append('<div>name is valid</div>');
+    }else{
+      event.preventDefault()
+      $statusElm.append('<div>name is invalid</div>');
+    }
+
+    if($message.length > 2){
+      $statusElm.append('<div>msg is valid</div>');
+    }else{
+      event.preventDefault()
+      $statusElm.append('<div>msg is invalid</div>');
+    }
+  })
+})
 

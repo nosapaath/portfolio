@@ -1,7 +1,54 @@
+footer{
+  .form{
+    background: orange;
+    margin: 20px;
+    box-shadow: rgba(44, 44, 44, .5) 0px 5px 7px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 15px 15px;
+    width: 80%;
+    height: 50vh;
+    padding: 50px;
+    margin: 0 auto 40px auto;
+    input, textarea, button{
+      font-size: 1.2rem;
+      background: orange;
+      border: none;
+      padding: 5px;
+      width: 80%;
+      &:focus{
+        outline: none;
+      }
+    }
+    button{
+      background: white;
+      width: 50%;
+      border: 1px solid $secondary-color;
+      border-radius: 15px 15px 15px 15px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    ::placeholder{
+      font-size: 1.2rem;
+    }
+  }
+}
+
 .icons{
   text-align: center;
-  background: $secondary-color;
   i{
-    color: white;
+    color: $secondary-color;
   }
+  a{
+    padding: 0.4rem;
+  }
+}
+
+label, input, textarea{
+  display: block
 }

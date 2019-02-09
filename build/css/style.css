@@ -510,6 +510,9 @@ a {
   color: white;
   text-decoration: none; }
 
+input[type="text"] {
+  font-size: 1.2rem; }
+
 .typewriter {
   display: inline-block;
   padding-top: 35vh; }
@@ -714,27 +717,79 @@ a {
   background: orange;
   color: white; }
 
-.icons {
-  margin-top: 1rem;
-  -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out; }
-  .icons a {
-    padding: 0.4rem; }
-    .icons a:hover {
-      color: orange;
-      -webkit-transition: all .5s ease-out;
-      transition: all .5s ease-out; }
-
 .title {
   text-align: center; }
   .title h1 {
     text-transform: capitalize;
-    margin-bottom: 20px; }
+    margin-bottom: 50px;
+    border-top: 2px orange solid;
+    border-bottom: 2px orange solid; }
+
+footer .form {
+  background: orange;
+  margin: 20px;
+  -webkit-box-shadow: rgba(44, 44, 44, 0.5) 0px 5px 7px;
+          box-shadow: rgba(44, 44, 44, 0.5) 0px 5px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px 15px 15px 15px;
+  width: 80%;
+  height: 50vh;
+  padding: 50px;
+  margin: 0 auto 40px auto; }
+  footer .form input, footer .form textarea, footer .form button {
+    font-size: 1.2rem;
+    background: orange;
+    border: none;
+    padding: 5px;
+    width: 80%; }
+    footer .form input:focus, footer .form textarea:focus, footer .form button:focus {
+      outline: none; }
+  footer .form button {
+    background: white;
+    width: 50%;
+    border: 1px solid orange;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  footer .form ::-webkit-input-placeholder {
+    font-size: 1.2rem; }
+  footer .form :-ms-input-placeholder {
+    font-size: 1.2rem; }
+  footer .form ::-ms-input-placeholder {
+    font-size: 1.2rem; }
+  footer .form ::placeholder {
+    font-size: 1.2rem; }
 
 .icons {
-  text-align: center;
-  background: orange; }
+  text-align: center; }
   .icons i {
-    color: white; }
+    color: orange; }
+  .icons a {
+    padding: 0.4rem; }
+
+label, input, textarea {
+  display: block; }
