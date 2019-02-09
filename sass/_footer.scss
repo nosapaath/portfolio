@@ -10,11 +10,11 @@ footer{
     box-shadow: rgba(44, 44, 44, .5) 0px 5px 7px;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 15px 15px 15px 15px;
     width: 80%;
-    height: 50vh;
+    // height: 50vh;
     padding: 20px 50px 20px 50px;
     margin: 0 auto 40px auto;
     input, textarea, button{
@@ -32,6 +32,9 @@ footer{
     button{
       background: transparent;
       width: 50%;
+      @include screen('medium'){
+        width: 250px;
+      }
       border: 1px solid $secondary-color;
       border-radius: 15px 15px 15px 15px;
       padding: 10px;
@@ -39,12 +42,18 @@ footer{
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      &:hover{
+        background: $secondary-color;
+        color: black;
+      }
     }
     ::placeholder{
       font-size: 1.2rem;
     }
     textarea{
+      height: 150px;
       margin-bottom: 10px;
+      resize: none;
     }
   }
 }

@@ -740,15 +740,14 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     border-radius: 15px 15px 15px 15px;
     width: 80%;
-    height: 50vh;
     padding: 20px 50px 20px 50px;
     margin: 0 auto 40px auto; }
     footer .form input, footer .form textarea, footer .form button {
@@ -780,6 +779,12 @@ footer {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      @media all and (min-width: 620px) {
+        footer .form button {
+          width: 250px; } }
+      footer .form button:hover {
+        background: orange;
+        color: black; }
     footer .form ::-webkit-input-placeholder {
       font-size: 1.2rem; }
     footer .form :-ms-input-placeholder {
@@ -789,7 +794,9 @@ footer {
     footer .form ::placeholder {
       font-size: 1.2rem; }
     footer .form textarea {
-      margin-bottom: 10px; }
+      height: 150px;
+      margin-bottom: 10px;
+      resize: none; }
 
 .icons {
   text-align: center; }

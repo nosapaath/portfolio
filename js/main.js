@@ -65,17 +65,17 @@ $(function() {
     $statusElm.empty()
 
     if($email.length > 5 && $email.includes('@') && $email.includes('.')){
-      $statusElm.append('<div>email is valid</div>');
+      // $statusElm.append('<div>email is valid</div>');
     }else{
       event.preventDefault()
-      $statusElm.append('<div>email is invalid</div>');
+      $statusElm.append('<div>Please check your email</div>');
     }
 
-    if($name.length > 2){
-      $statusElm.append('<div>name is valid</div>');
+    if($name.length > 0){
+      // $statusElm.append('<div>name is valid</div>');
     }else{
       event.preventDefault()
-      $statusElm.append('<div>name is invalid</div>');
+      $statusElm.append('<div>Please enter your Name</div>');
     }
 
     // if($message.length > 2){
