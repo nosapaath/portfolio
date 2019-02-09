@@ -49,10 +49,14 @@
 
 .title{
   text-align: center;
-  h1{
+  display: flex;
+  justify-content: center;
+  h2{
     text-transform: capitalize;
+    font-size: 2rem;
+    @include screen('medium'){
+      font-size: 2rem;
+    }
     margin-bottom: 50px;
-    border-top: 2px $secondary-color solid;
-    border-bottom: 2px $secondary-color solid;
   }
 }

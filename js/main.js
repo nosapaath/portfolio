@@ -78,12 +78,12 @@ $(function() {
       $statusElm.append('<div>name is invalid</div>');
     }
 
-    if($message.length > 2){
-      $statusElm.append('<div>msg is valid</div>');
-    }else{
-      event.preventDefault()
-      $statusElm.append('<div>msg is invalid</div>');
-    }
+    // if($message.length > 2){
+    //   $statusElm.append('<div>msg is valid</div>');
+    // }else{
+    //   event.preventDefault()
+    //   $statusElm.append('<div>msg is invalid</div>');
+    // }
   })
 })
 
