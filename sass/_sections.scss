@@ -88,6 +88,9 @@
           background-color: white;
         }
       }
+      i{
+        color:white;
+      }
       transition: background, .1s;
 	    transition: box-shadow, .3s;
       z-index: 2;
@@ -115,11 +118,6 @@
     background-position: top -20px;
     background-attachment: fixed;
   }
-  // background-color: white;
-  // background-size: cover;
-  // background-position: 25% 50%;
-  // background-attachment: fixed;
-  // color: black;
   i :not(.button){
     bottom: 20px;
     &:hover{
@@ -199,9 +197,10 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   text-align: center;
+  height: 85vh;
   h3{
     font-size: 1.3rem;
     margin: .5rem 0;

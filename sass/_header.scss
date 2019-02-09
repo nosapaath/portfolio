@@ -16,6 +16,11 @@
     font-size: 1.5rem;
     &:hover{
       cursor: pointer;
+      border-color: black;
+      background-color: darken($secondary-color, 5);
+      p{
+        color: black;
+      }
     }
     p{
       color: $secondary-color;

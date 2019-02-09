@@ -226,7 +226,11 @@ table {
   right: 20px;
   font-size: 1.5rem; }
   .inner-container .btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    border-color: black;
+    background-color: #e69500; }
+    .inner-container .btn:hover p {
+      color: black; }
   .inner-container .btn p {
     color: orange; }
 
@@ -363,6 +367,8 @@ table {
         color: white; }
       .project-wrapper div:hover h2:after {
         background-color: white; }
+      .project-wrapper div:hover i {
+        color: white; }
 
 .outer-container {
   padding-left: 5%;
@@ -443,11 +449,11 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 20px;
-  text-align: center; }
+  text-align: center;
+  height: 85vh; }
   .round-box h3 {
     font-size: 1.3rem;
     margin: .5rem 0; }
@@ -495,7 +501,7 @@ html {
     font-weight: normal; }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold; }
   @media all and (min-width: 620px) {
     h1 {
@@ -529,30 +535,25 @@ input[type="text"] {
   font-size: 1.2rem; }
 
 .typewriter {
-  display: inline-block;
-  padding-top: 35vh; }
+  display: inline-block; }
   @media all and (min-width: 620px) {
     .typewriter h1:first-child {
       overflow: hidden;
-      border-right: 1rem solid orange;
+      border-right: .5rem solid orange;
       white-space: nowrap;
-      margin: 0 auto;
       -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
               animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; } }
-  @media all and (min-width: 620px) and (min-width: 620px) {
-    .typewriter h1:first-child {
-      letter-spacing: .15em; } }
 
 /* The typing effect */
 @-webkit-keyframes typing {
-  0% {
+  0%, 30% {
     width: 0%; }
   50% {
     width: 100%; }
   100% {
     width: 100%; } }
 @keyframes typing {
-  0% {
+  0%, 30% {
     width: 0%; }
   50% {
     width: 100%; }
@@ -570,76 +571,6 @@ input[type="text"] {
     border-color: transparent; }
   50% {
     border-color: orange; } }
-
-.form-style-8 {
-  font-family: 'Open Sans Condensed', arial, sans;
-  width: 500px;
-  padding: 30px;
-  background: #FFFFFF;
-  margin: 50px auto;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22); }
-
-.form-style-8 h2 {
-  background: #4D4D4D;
-  text-transform: uppercase;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #797979;
-  font-size: 18px;
-  font-weight: 100;
-  padding: 20px;
-  margin: -30px -30px 30px -30px; }
-
-.form-style-8 input[type="text"],
-.form-style-8 input[type="date"],
-.form-style-8 input[type="datetime"],
-.form-style-8 input[type="email"],
-.form-style-8 input[type="number"],
-.form-style-8 input[type="search"],
-.form-style-8 input[type="time"],
-.form-style-8 input[type="url"],
-.form-style-8 input[type="password"],
-.form-style-8 textarea,
-.form-style-8 select {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  outline: none;
-  display: block;
-  width: 100%;
-  padding: 7px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  background: transparent;
-  margin-bottom: 10px;
-  font: 16px Arial, Helvetica, sans-serif;
-  height: 45px; }
-
-.form-style-8 textarea {
-  resize: none;
-  overflow: hidden; }
-
-.form-style-8 input[type="button"],
-.form-style-8 input[type="submit"] {
-  -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
-  box-shadow: inset 0px 1px 0px 0px #45D6D6;
-  background-color: #2CBBBB;
-  border: 1px solid #27A0A0;
-  display: inline-block;
-  cursor: pointer;
-  color: #FFFFFF;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 14px;
-  padding: 8px 18px;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-.form-style-8 input[type="button"]:hover,
-.form-style-8 input[type="submit"]:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #34CACA), to(#30C9C9));
-  background: linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
-  background-color: #34CACA; }
 
 @-webkit-keyframes slideInFromLeft {
   0% {
@@ -776,18 +707,14 @@ input[type="text"] {
 @-webkit-keyframes scroll {
   0%, 20% {
     -webkit-transform: translateY(0) scaleY(1);
-            transform: translateY(0) scaleY(1); }
-  10% {
-    opacity: 1; }
-  100% {
-    -webkit-transform: translateY(36px) scaleY(2);
-            transform: translateY(36px) scaleY(2);
-    opacity: 0.01; } }
+            transform: translateY(0) scaleY(1); } }
 
 @keyframes scroll {
   0%, 20% {
     -webkit-transform: translateY(0) scaleY(1);
-            transform: translateY(0) scaleY(1); }
+            transform: translateY(0) scaleY(1); } }
+
+@keyframes scroll {
   10% {
     opacity: 1; }
   100% {
@@ -861,6 +788,8 @@ footer {
       font-size: 1.2rem; }
     footer .form ::placeholder {
       font-size: 1.2rem; }
+    footer .form textarea {
+      margin-bottom: 10px; }
 
 .icons {
   text-align: center; }

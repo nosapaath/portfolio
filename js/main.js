@@ -89,7 +89,7 @@ $(function() {
   $('.scroll-link').click(function(e){
 		e.preventDefault();
 		$('body,html').animate({
-			scrollTop: $('#tech').offset().top
+			scrollTop: $('#tech').offset().top-20
 		}, 750);
   });
   $('#chat').click(function(e){
