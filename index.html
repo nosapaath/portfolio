@@ -17,21 +17,25 @@
     <section class="outer-container">
           <div class="inner-container greeting">
               <h1>Hello, my name is Nosa. I am a Front-end developer living in Vancouver, BC.</h1>
-              <a href="#scrollto" class="btn">
+              <a href="#scrollto" class="btn" id="chat">
                 <p>Let's Chat</p>
               </a>
               <a href="#" class="logo">
                 <p>NP</p>
               </a>
+              <a class="scroll-link" href="#tech">
+                <svg class="mouse" xmlns="..." viewBox="0 0 76 130">
+                  <g fill="none">
+                  <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
+                  <circle cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
+                  </g>
+                </svg>
+              </a>
           </div>
       </section>
   </main>
-<!-- 
-  <div class="outer-container">
-    <img class="branding-picture inner-container" src="./build/images/nosa.jpg" alt="picture of Nosa Paath" >
-  </div> -->
   
-  <div class="round-box outer-container">
+  <div id="tech" class="round-box outer-container">
     <i class="fas fa-laptop-code fa-4x"></i>
     <h3>Languages I Speak</h3>
     <p>HTML, CSS, JavaScript, Sass,PHP</p>
@@ -49,7 +53,7 @@
     <div class="title">
       <h2>My Recent Work</h2>
     </div>
-    <div class="project-wrapper">
+    <div class="project-wrapper bounceInLeft">
         <div class="quotes-devs">
           <a href="https://github.com/nosapaath/quotesForDevs">
             <h2>Quotes On Devs</h2>
@@ -67,7 +71,7 @@
           </a>
         </div>
         <div class="aloha">
-          <a href="https://github.com/nosapaath/AlohaProject"> 
+          <a href="https://nosapaath.github.io/AlohaProject/"> 
             <h2>Aloha Website</h2>
             <p>An ecommerce store website built using jQuery and flex boxes. </p>
             <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
@@ -87,7 +91,7 @@
 
   <footer>
 
-    <form id="scrollto" action="https://formspree.io/adepaath@gmail.com" method="POST" class="form" autocomplete="off">
+    <form id="scrollto" action="https://formspree.io/adepaath@gmail.com" method="POST" class="form" autocomplete="false">
       <div class="title">
         <h2>Speak to you soon!</h2>
       </div>

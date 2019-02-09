@@ -60,7 +60,7 @@ $(function() {
 
     let $email = $('.email').val()
     let $name = $('.name').val()
-    let $message = $('.message').val()
+    // let $message = $('.message').val()
     let $statusElm = $('.status')
     $statusElm.empty()
 
@@ -85,5 +85,18 @@ $(function() {
     //   $statusElm.append('<div>msg is invalid</div>');
     // }
   })
+
+  $('.scroll-link').click(function(e){
+		e.preventDefault();
+		$('body,html').animate({
+			scrollTop: $('#tech').offset().top
+		}, 750);
+  });
+  $('#chat').click(function(e){
+		e.preventDefault();
+		$('body,html').animate({
+			scrollTop: $('#scrollto').offset().top
+		}, 550);
+	});
 })
 
