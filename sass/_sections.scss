@@ -1,24 +1,34 @@
 .hero-section{
+
   height: 100vh; 
   width: 100vw; 
   text-align: center;
   margin-bottom: 50px;
+
 }
 
 .column-flex{
+
   flex-flow: column;
+
 }
 
 .project-wrapper{
+
   display: flex;
   flex-flow: column wrap;
-  @include screen('medium'){
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-  }
   justify-content: center;
   width: 100%;
-  div{
+
+  @include screen('large'){
+
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+  }
+  
+  a{
+
     animation-name: slideInFromLeft;
     animation-duration: 1s;
     overflow: hidden;
@@ -26,16 +36,13 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,.12);
     width: 100%;
     height: 300px;
-  
-    @include screen('medium'){
-      width: 45%;
-      height: 400px;
-      background: white;
-    }
+
     @include screen('large'){
+
       width: 40%;
       height: 400px;
       background: white;
+
     }
     margin-bottom: 50px;
     opacity:1;
@@ -43,54 +50,84 @@
     color: black;
     position: relative;
     padding: 40px;
+
     i{
+
       margin-left: 5px;
+
     }
+
     p{
+
       font-size: 1.2rem;
       margin-top: 20px;
+
     }
+
     a{
+
       color: black;
       text-decoration: none;
+
     }
     .see-more{
+
       font-size: 1.2rem;
       font-weight: bold;
       position: absolute; 
       bottom: 40px;
       display: flex;
       align-items: center;
+
     }
+
     h2{
-      font-size: 2.5rem;
+
+      font-size: 1.5em;
       z-index: 100;
       transition: 0.4s;
+
+      @include screen('medium'){
+
+        font-size: 2em;
+
+      }
+
+      @include screen('large'){
+
+        font-size: 2.5em;
+
+      }
+
       &:after{
         content: "";
         background-color: orange;
         width: 50px;
         height: 5px;
         position: absolute;
-        left: 41px;
-        top: 5.8rem;
         transition: width, 5s;
         transition: background-color, .2s;
+        left: 41px;
+        top: 4.5rem;
+
+        @include screen('medium'){
+
+          left: 41px;
+          top: 5rem;
+
+        }
+
+        @include screen('large'){
+
+          left: 41px;
+          top: 5.5rem;
+
+        }
+
       }
     }
     &:hover{
-      top: 10px;
-      .see-more{
-        color: white;
-      }
-      h2{
-        &:after{
-          background-color: white;
-        }
-      }
-      i{
-        color:white;
-      }
+
       transition: background, .1s;
 	    transition: box-shadow, .3s;
       z-index: 2;
@@ -100,7 +137,31 @@
       left: 0;
       cursor: pointer;
       background: orange;
-      box-shadow: rgba(44, 44, 44, .5) 0px 5px 7px
+      box-shadow: rgba(44, 44, 44, .5) 0px 5px 7px;
+      top: 10px;
+
+      .see-more{
+
+        color: white;
+
+      }
+
+      h2{
+
+        &:after{
+
+          background-color: white;
+
+        }
+
+      }
+
+      i{
+
+        color:white;
+
+      }
+
     }
   }
 }
@@ -108,92 +169,127 @@
 // background on hero section
 
 .outer-container{
+
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 40px;
-  // text-align: center;
+
   @include screen('medium'){
-    // background: black;
+
     background-size: cover;
     background-position: top -20px;
     background-attachment: fixed;
+
   }
+
   i :not(.button){
+
     bottom: 20px;
+
     &:hover{
+
       color:orange;
+
     }
   }
 }
 
 .inner-container{
+
   margin-top: 3rem;
   padding-bottom: 3rem;
+
 }
 
 .branding-picture{
+
   width: 100%;
   height: 250px;
   object-fit: cover;
+
 }
 .quote-area{
+
     width: 80%;
     padding: 20px;
+
     h1{
+
       font-size: 5rem;
       
     }
   @include screen('medium'){
+
     margin: 0 auto;
     width: 80%;
     padding: 20px;
+
   }
   @include screen('large'){
+
     width: 80%;
     padding: 20px;
+
   }
 }
 
 .black-background{
+
   background-color: #222;
+
 }
 
 .left-box{
+
   height: 500px;
+
 }
 
 .hideSmall{
+
   display: none !important;
+
   @include screen('medium'){
+
     display: inline;
   }
+
   @include screen('large'){
+
     display: inline;
   }
+
 }
 
 //contact form
 
 .contact-wrapper{
+
   background-color: #222;
   position: relative;
   height: 100vh;
   padding: 5% 10%;
+  
 }
 
 .contact-me{
+
   color: white;
+
 }
 
 .instanews, .inhabitent, .aloha, .quotes-devs{
   img{
+
     position: absolute;
     right: 20px;
     bottom: 20px;
+
   }
 }
 
 .round-box{
+
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -201,26 +297,37 @@
   padding: 20px;
   text-align: center;
   height: 85vh;
+
   h3{
+
     font-size: 1.3rem;
     margin: .5rem 0;
+
   }
   h3,i{
+
     color: $secondary-color;
+
   }
   i{
+
     margin-bottom: 2rem;
+
   }
   ul{
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
   }
 }
 main{
+
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/nosa.jpg');
   background-size: cover;
   background-position: 25% 50%;
   color: white;
   height: 100vh;
+
 }

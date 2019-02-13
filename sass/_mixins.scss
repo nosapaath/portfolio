@@ -1,19 +1,30 @@
 @mixin screen($size) {
+
   @if $size == 'medium' {
+
     @media all and (min-width: $breakpoint-medium) {
+
         @content;
+
     }
   }
   @else if $size == 'large' {
+
     @media all and (min-width: $breakpoint-large) {
+
         @content;
+
     }
   }
   @else {
+
     @content;
+
   }
 }
 
 @mixin easeOut{
+
   transition: all .5s ease-out;
+  
 }

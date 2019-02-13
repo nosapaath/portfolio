@@ -5,22 +5,25 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Nosa Paath</title>
 </head>
 
 <body>
   <main id="home">
     <section class="outer-container">
-          <div class="inner-container greeting">
-              <h1>Hello, my name is Nosa.</h1>
-              <div class="typewriter">
-                <h1>I am a Front-end developer living in Vancouver, BC.</h1>
+          <div class="greeting">
+              <div class="title-wrapper">
+                <h1>Hello, my name is Nosa.</h1>
+                <div class="typewriter">
+                  <h1>I am a web developer living in Vancouver, BC.</h1>
+                </div>
               </div>
-              <a href="#scrollto" class="btn" id="chat">
+              <a href="#scrollto" class="btn-chat animated heartBeat delay-3s" id="chat">
                 <p>Let's Chat</p>
               </a>
               <a href="#" class="logo">
@@ -55,6 +58,10 @@
         <li>WordPress</li>
       </ul>
     </div>
+    <div>
+      <h3>Interests</h3>
+      <p>App Dev, Photography, Cinematography, Music  </p>
+    </div>
   </div>
 
   <section class="outer-container">
@@ -62,45 +69,35 @@
       <h2>My Recent Work</h2>
     </div>
     <div class="project-wrapper bounceInLeft">
-        <div class="quotes-devs">
-          <a href="https://github.com/nosapaath/quotesForDevs">
-            <h2>Quotes On Devs</h2>
-            <p>A Wordpress based website built using Rest API, Jquery, and PHP.</p>
-            <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
-            <img src="./build/images/quoteslogo.svg" alt="new york times app logo" height="87px" width="100px" />
-          </a>
-        </div>
-        <div class="instanews">
-          <a href="https://nosapaath.github.io/InstanewsApp/">
-            <h2>Instanews</h2>
-            <p>An app that uses JavaScript and the New York Times API to populate news stories.</p>
-            <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
-            <img src="./build/images/nyt-logo.svg" alt="new york times app logo" height="87px" width="100px" />
-          </a>
-        </div>
-        <div class="aloha">
-          <a href="https://nosapaath.github.io/AlohaProject/"> 
-            <h2>Aloha Website</h2>
-            <p>An ecommerce store website built using jQuery and flex boxes. </p>
-            <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
-            <img src="./build/images/aloha-logo.svg" alt="new york times app logo" height="87px" width="100px" />
-          </a>
-        </div>
-        <div class="inhabitent">
-          <a href="https://github.com/nosapaath/inhabitentCo">
-            <h2>Inhabitent Co.</h2>
-            <p>A Wordpress based website built using PHP.</p>
-            <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
-            <img src="./build/images/inhabitent-logo.svg" alt="new york times app logo" height="87px" width="100px" />
-          </a>
-        </div>
-        <div class="pong-game">
-            <a href="https://nosapaath.github.io/pongGameNosa/">
-              <h2>Pong Game</h2>
-              <p>Powered by JavaScript, design inspired by McDonalds</p>
-              <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
-            </a>
-          </div>
+        <a class="quotes-devs" href="https://github.com/nosapaath/quotesForDevs" target="_blank">
+          <h2>Quotes On Devs</h2>
+          <p>A Wordpress based website built using Rest API, Jquery, and PHP.</p>
+          <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+          <img src="./build/images/quoteslogo.svg" alt="new york times app logo" height="87px" width="100px" />
+        </a>
+        <a class="instanews" href="https://nosapaath.github.io/InstanewsApp/" target="_blank">
+          <h2>Instanews</h2>
+          <p>An app that uses JavaScript and the New York Times API to populate news stories.</p>
+          <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+          <img src="./build/images/nyt-logo.svg" alt="new york times app logo" height="87px" width="100px" />
+        </a>
+        <a class="aloha" href="https://nosapaath.github.io/AlohaProject/" target="_blank"> 
+          <h2>Aloha Website</h2>
+          <p>An ecommerce store website built using jQuery and flex boxes. </p>
+          <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+          <img src="./build/images/aloha-logo.svg" alt="new york times app logo" height="87px" width="100px" />
+        </a>
+        <a class="inhabitent" href="https://github.com/nosapaath/inhabitentCo" target="_blank">
+          <h2>Inhabitent Co.</h2>
+          <p>A Wordpress based website built using PHP.</p>
+          <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+          <img src="./build/images/inhabitent-logo.svg" alt="new york times app logo" height="87px" width="100px" />
+        </a>
+        <a class="pong-game" href="https://nosapaath.github.io/pongGameNosa/" target="_blank">
+          <h2>Pong Game</h2>
+          <p>Powered by JavaScript, design inspired by McDonalds</p>
+          <p class="see-more">See Project <i class="fas fa-arrow-right"></i></p>
+        </a>
     </div>
   </section>  
 
@@ -135,9 +132,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="./build/js/main.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
 </html>
-
-              <!-- <div class="branding">
-                <img src="./build/images/nosa.jpg" alt="portrait of me smiling">
-              </div> -->

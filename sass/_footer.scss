@@ -1,11 +1,13 @@
 footer{
+
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/nosa.jpg');
   background-size: cover;
   background-position: 25% 50%;
   padding: 50px 0;
   color: $secondary-color;
+
   .form{
-    // background: orange;
+
     border: 2px $secondary-color solid;
     box-shadow: rgba(44, 44, 44, .5) 0px 5px 7px;
     display:flex;
@@ -14,27 +16,36 @@ footer{
     align-items: center;
     border-radius: 15px 15px 15px 15px;
     width: 80%;
-    // height: 50vh;
     padding: 20px 50px 20px 50px;
     margin: 0 auto 40px auto;
+
     input, textarea, button{
+
       color: white;
       font-size: 1.2rem;
       background: transparent;
       border: none;
       padding: 5px;
       width: 80%;
+
       &:focus{
+
         border: 2px $secondary-color solid;
         outline: none;
+
       }
     }
     button{
+
       background: transparent;
       width: 50%;
+
       @include screen('medium'){
+
         width: 250px;
+
       }
+
       border: 1px solid $secondary-color;
       border-radius: 15px 15px 15px 15px;
       padding: 10px;
@@ -42,32 +53,47 @@ footer{
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
       &:hover{
+
         background: $secondary-color;
         color: black;
+
       }
     }
     ::placeholder{
+
       font-size: 1.2rem;
+
     }
     textarea{
+
       height: 150px;
       margin-bottom: 10px;
       resize: none;
+
     }
   }
 }
 
 .icons{
+
   text-align: center;
+
   i{
+
     color: $secondary-color;
+
   }
   a{
+
     padding: 0.4rem;
+
   }
 }
 
 label, input, textarea{
-  display: block
+
+  display: block;
+
 }

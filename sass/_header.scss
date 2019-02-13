@@ -1,48 +1,71 @@
 .inner-container{
 
   @include screen('medium'){
+
     align-items: center;
+
   }
   h1{
+
     line-height: 1.5em;
+
   }
-  .btn{
-    border: 1.5px $secondary-color solid;
-    border-radius: 20px;
-    padding: 5px 15px 5px 15px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 1.5rem;
-    &:hover{
-      cursor: pointer;
-      border-color: black;
-      background-color: darken($secondary-color, 5);
-      p{
-        color: black;
-      }
-    }
+}
+
+.btn-chat{
+
+  border: 1.5px $secondary-color solid;
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  animation-duration: 2s;
+
+  p{
+
+    color: $secondary-color;
+
+  }
+
+  &:hover{
+
+    cursor: pointer;
+    border-color: black;
+    background-color: darken($secondary-color, 5);
+
     p{
-      color: $secondary-color;
+
+      color: black;
+    
     }
   }
 }
 
 .logo{
+
   font-size: 2rem;
   border: 3px $secondary-color solid;
   padding: 5px 5px 5px 5px;
   position: absolute;
   top: 20px;
   left: 20px;
+
   &:hover{
+
     cursor: pointer;
+
   }
   p{
+
     color: $secondary-color;
+
   }
 }
 
 .greeting{
+
   text-align: left;
+  
 }
